@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="section-center box">
+        <p class="alert"></p>
+        <h3>fertilizers calculator</h3>
+        <form type="submit" class="ferti-form">
+          <div class="form-control">
+            <input type="number" class="nValue" placeholder="N (Kg/ha)" />
+            <input type="number" class="pValue" placeholder="P2O5 (Kg/ha)" />
+            <input type="number" class="kValue" placeholder="K2O (Kg/ha)" />
+          </div>
+          <div class="vermi-control">
+            <input
+              type="number"
+              class="vermi"
+              placeholder="% of N supplied from VC (%)"
+            />
+            <input type="number" class="land" placeholder="Land (ha)" />
+          </div>
+          <div class="submit-control">
+            <button type="button" class="resetBtn">reset all</button>
+            <button type="submit" class="submitBtn">submit</button>
+          </div>
+          <div class="insertData"></div>
+        </form>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
