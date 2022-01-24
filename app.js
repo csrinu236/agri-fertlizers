@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
               With the dosage of N:P2O5:K2O = ${nValue.value}:${pValue.value}:${
       kValue.value
     }, in which ${vermiValue.value}% of N is to be
-              supplied through Vermicopost in ${
+              supplied through Vermicopost in the given ${
                 land.value
               }ha of land, we have to use
             </p>
