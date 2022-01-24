@@ -34,19 +34,21 @@ form.addEventListener("submit", (e) => {
             <div class="ansSheet">
               <article>
                 <p>Vermicompost :</p>
-                <p class="weight">${vermiWeight * land.value} kg</p>
+                <p class="weight">${(vermiWeight * land.value).toFixed(
+                  2
+                )} kg</p>
               </article>
               <article>
                 <p>DAP (P2O5) :</p>
-                <p class="weight">${DAPWeight * land.value} kg</p>
+                <p class="weight">${(DAPWeight * land.value).toFixed(2)} kg</p>
               </article>
               <article>
                 <p>MOP (K2O) :</p>
-                <p class="weight">${MOPWeight * land.value} kg</p>
+                <p class="weight">${(MOPWeight * land.value).toFixed(2)} kg</p>
               </article>
               <article>
                 <p>Urea :</p>
-                <p class="weight">${UreaWeight * land.value} kg</p>
+                <p class="weight">${(UreaWeight * land.value).toFixed(2)} kg</p>
               </article>
             </div>`;
     displayAlert("Values generated", "success");
