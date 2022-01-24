@@ -305,6 +305,7 @@ input::-webkit-inner-spin-button {
 .ansSheet p {
   margin-bottom: 0;
   text-align: right;
+  color: var(--clr-grey-1);
 }
 .ansSheet .weight {
   text-align: center;
