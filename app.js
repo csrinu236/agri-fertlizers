@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
     let UreaWeight = (remainN / 0.466).toFixed(2);
     insertData.innerHTML = `<p class="answer">
               With the dosage of N:P2O5:K2O = ${nValue.value}:${pValue.value}:${kValue.value}, in which ${vermiValue.value}% of N is to be
-              supplied through Vermicopost and ${land.value}ha of land, we have to use
+              supplied through Vermicopost in ${land.value}ha of land, we have to use
             </p>
             <div class="ansSheet">
               <article>
@@ -33,11 +33,11 @@ form.addEventListener("submit", (e) => {
                 <p class="weight">${vermiWeight} kg</p>
               </article>
               <article>
-                <p>DAP :</p>
+                <p>DAP (P2O5) :</p>
                 <p class="weight">${DAPWeight} kg</p>
               </article>
               <article>
-                <p>MOP :</p>
+                <p>MOP (K2O) :</p>
                 <p class="weight">${MOPWeight} kg</p>
               </article>
               <article>
