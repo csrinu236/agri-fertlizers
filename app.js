@@ -48,7 +48,11 @@ form.addEventListener("submit", (e) => {
               </article>
               <article>
                 <p>Urea :</p>
-                <p class="weight">${(UreaWeight * land.value).toFixed(2)} kg</p>
+                <p class="weight">${
+                  (UreaWeight * land.value).toFixed(2) > 0
+                    ? (UreaWeight * land.value).toFixed(2)
+                    : 0
+                } kg</p>
               </article>
             </div>`;
     displayAlert("Values generated", "success");
