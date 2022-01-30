@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
             </p>
             <div class="ansSheet">
               <article>
-                <p>Vermicompost :</p>
+                <p>VC :</p>
                 <p class="weight">${(vermiWeight * land.value).toFixed(
                   2
                 )} kg</p>
