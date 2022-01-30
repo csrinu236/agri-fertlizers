@@ -40,11 +40,19 @@ form.addEventListener("submit", (e) => {
               </article>
               <article>
                 <p>DAP (P2O5) :</p>
-                <p class="weight">${(DAPWeight * land.value).toFixed(2)} kg</p>
+                <p class="weight">${
+                  (DAPWeight * land.value).toFixed(2) > 0
+                    ? (DAPWeight * land.value).toFixed(2)
+                    : 0
+                } kg</p>
               </article>
               <article>
                 <p>MOP (K2O) :</p>
-                <p class="weight">${(MOPWeight * land.value).toFixed(2)} kg</p>
+                <p class="weight">${
+                  (MOPWeight * land.value).toFixed(2) > 0
+                    ? (MOPWeight * land.value).toFixed(2)
+                    : 0
+                } kg</p>
               </article>
               <article>
                 <p>Urea :</p>
